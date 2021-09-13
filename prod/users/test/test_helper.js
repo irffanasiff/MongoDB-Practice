@@ -8,6 +8,6 @@ mongoose.connection
 beforeEach((done) => {
   mongoose.connection.collections.users.drop(() => {
     //reacdy to run the next test!
-    done();
+    done(); //after collection of users is done go a
   });
 });
