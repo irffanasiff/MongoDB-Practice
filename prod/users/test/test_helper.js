@@ -1,5 +1,7 @@
 const mongoose = require('mongoose');
 
+momgoose.Promise = global.Promise;
+
 mongoose.connect('mongodb://localhost/users_test');
 mongoose.connection
   .once('open', () => console.log('Good to go 🚀'))
