@@ -1,0 +1,16 @@
+{
+  "name": "users",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "mocha": "^9.1.1",
+    "mongoose": "^6.0.5",
+    "nodemon": "^2.0.12"
+  }
+}
