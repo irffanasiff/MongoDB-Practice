@@ -6,7 +6,8 @@ mongoose.connection
   .on('error', (error) => console.warn('Warning 🤬', error));
 
 beforeEach((done) => {
-  mongoose.connection.collections.users.drop();
-  //reacdy to run the next test!
-  done();
+  mongoose.connection.collections.users.drop(() => {
+    //reacdy to run the next test!
+    done();
+  });
 });
